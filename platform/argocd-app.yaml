@@ -10,6 +10,7 @@ spec:
     chart: vcluster-platform
     targetRevision: 4.7.0
     helm:
+      releaseName: loft
       values: |
         admin:
           password: 5b8e4095-4639-4b80-8e56-d8b61792fb59
