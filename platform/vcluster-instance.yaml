@@ -6,8 +6,5 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
-  templateRef:
-    name: ""                    # leave empty to use default template
   clusterRef:
     cluster: loft-cluster              # the connected cluster name
-  parameters: ""
