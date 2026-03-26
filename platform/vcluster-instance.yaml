@@ -1,0 +1,13 @@
+apiVersion: management.loft.sh/v1
+kind: VirtualClusterInstance
+metadata:
+  name: my-vcluster
+  namespace: p-my-project       # p- prefix + your project name
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  templateRef:
+    name: ""                    # leave empty to use default template
+  clusterRef:
+    cluster: local              # the connected cluster name
+  parameters: ""
