@@ -8,3 +8,7 @@ metadata:
 spec:
   clusterRef:
     cluster: loft-cluster              # the connected cluster name
+  template:
+    helmRelease:
+      chart:
+        version: 0.22.0                # change this to upgrade the vCluster
