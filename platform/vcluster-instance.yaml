@@ -9,5 +9,5 @@ spec:
   templateRef:
     name: ""                    # leave empty to use default template
   clusterRef:
-    cluster: local              # the connected cluster name
+    cluster: loft-cluster              # the connected cluster name
   parameters: ""
