@@ -10,3 +10,4 @@ spec:
     cluster: loft-cluster
   templateRef:
     name: dev-templatelqcb2
+    version: "1.X.X"
