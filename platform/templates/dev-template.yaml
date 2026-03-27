@@ -4,6 +4,19 @@ metadata:
   name: dev-templatelqcb2
 spec:
   displayName: dev-template
+  template:
+    helmRelease:
+      chart:
+        version: "0.31.2"        # 👈 required — acts as default/fallback
+      values: |
+        sync:
+          toHost:
+            ingresses:
+              enabled: true
+        controlPlane:
+          coredns:
+            enabled: true
+            embedded: true
   versions:
     - version: "1.0.0"
       template:
