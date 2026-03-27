@@ -8,12 +8,12 @@ spec:
   source:
     repoURL: https://charts.loft.sh
     chart: vcluster-platform
-    targetRevision: 4.8.0
+    targetRevision: 4.7.0
     helm:
       releaseName: loft
       values: |
         admin:
-          password: 5b8e4095-4639-4b80-8e56-d8b61792fb59
+          password: 17d187a0-6f0c-4a52-bc7b-acdc12ece2ed
   destination:
     server: https://kubernetes.default.svc
     namespace: vcluster-platform
