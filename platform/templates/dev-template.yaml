@@ -1,0 +1,10 @@
+apiVersion: management.loft.sh/v1
+kind: VirtualClusterTemplate
+metadata:
+  name: dev-templatelqcb2
+spec:
+  displayName: dev-template
+  template:
+    helmRelease:
+      chart:
+        version: "0.31.2"
