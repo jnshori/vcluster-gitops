@@ -1,0 +1,15 @@
+apiVersion: management.loft.sh/v1
+kind: Project
+metadata:
+  name: team-beta
+spec:
+  displayName: team-beta
+  members:
+    - kind: User
+      name: admin
+      clusterRole: project-admin
+  allowedClusters:
+    - name: "*"
+  allowedTemplates:
+    - kind: VirtualClusterTemplate
+      name: "*"
